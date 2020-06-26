@@ -1,0 +1,72 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: noelli - Kind Gottes, Programmierer und IT-Spezialist 
+email: tobiah@noell.li
+description: >- # this means to ignore newlines until "baseurl:"
+  Ich bin wiedergeborener Christ und Programmiere gerne.<BR>
+  Auf dieser Seite findest Du einige meiner Projekte und siehst in welchen Feldern ich mich auskenne.
+kontakt: >-
+  Vielleicht hast Du eine Idee die noch niemand umgesetzt hat oder suchst Lösungen zu einem speziellen Problem?<BR>
+  Schreib mich gerne an!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.noell.li" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  noelli
+repository: https://github.com/noelli/noelli.github.io
+
+# Build settings
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-multiple-languages-plugin
+  - jekyll-sitemap
+
+show_downloads: false # ["true" or "false" to indicate whether to provide a download URL]
+playstore: https://play.google.com/store/apps/dev?id=7802855840687304638
+
+languages: ["de", "en"]
+
+# exclude_from_localizations: ["assets", "404.html"]
+# If you wish to avoid having the default_lang built into the root of your website, use:
+# default_locale_in_subfolder: true
+
+collections:
+  projects:
+    output: true
+matomo_analytics: true # [Your Google Analytics tracking ID]
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
