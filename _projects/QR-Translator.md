@@ -15,6 +15,7 @@ techniques:
     - json
 
 ---
+<!-- ToDo: Add translated description, documentation, etc. -->
 
 # QR Übersetzer
 

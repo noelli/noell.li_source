@@ -16,6 +16,7 @@ techniques:
 
 ---
 
+<!-- ToDo: Add translation -->
 
 # Compile NGINX with RTMP and setup Multi-Streaming
 These Scripts will install NGINX with the RTMP Module in the usual directories similar to installation with apt-get.

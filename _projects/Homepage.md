@@ -17,4 +17,6 @@ techniques:
 
 ---
 
+<!-- ToDo: Add translated description, etc. -->
+
 Diese Homepage ist einfach toll
