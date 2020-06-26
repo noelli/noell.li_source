@@ -7,9 +7,9 @@ thumbnail:
     url: assets/images/QR-Translator.png
 links:
     - name: github
-      url: http://github.com
+      url: https://github.com/noelli/qr_translator
     - name: google-play
-      url: http://play.google.com
+      url: https://play.google.com/store/apps/details?id=li.noell.qr_translator
 techniques:
     - Flutter
     - json

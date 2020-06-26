@@ -9,7 +9,7 @@ thumbnail:
     url: assets/images/noelli.png
 links:
     - name: github
-      url: http://github.com
+      url: https://github.com/noelli/noell.li_source
 techniques:
     - jekyll
     - materialize.css
