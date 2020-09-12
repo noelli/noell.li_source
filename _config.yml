@@ -41,7 +41,7 @@ plugins:
 show_downloads: false # ["true" or "false" to indicate whether to provide a download URL]
 playstore: https://play.google.com/store/apps/dev?id=7802855840687304638
 
-keep_files: ['CNAME']
+keep_files: ['CNAME', '.git', '.gitignore']
 
 languages: ["de", "en"]
 
