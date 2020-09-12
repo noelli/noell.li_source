@@ -20,3 +20,7 @@ techniques:
 <!-- ToDo: Add translated description, etc. -->
 
 Diese Homepage ist einfach toll
+
+- To Build: `bundle exec jekyll build`
+- To Run Locally: `bundle exec jekyll serve`
+
