@@ -1,10 +1,10 @@
 ---
 layout: project
-title: Streaming Server
-description: Anleitung und Scripte um einen eigenen Streaming Server aufzusetzen.
+title: NGINX (Multi-) Streaming Server
+description: Instrucions and Scripts to Setup your own (Multi-) Streaming Server, either Locally or on a VPS.
 client: Ev. Gemeinschaft Büschergrund
 thumbnail:
-    url: assets/images/QR-Translator.png
+    url: assets/images/NGINXStreamingServer.png
 links:
     - name: github
       url: https://gist.github.com/noelli/489c5c0cf5a561a32f757d7513465344
@@ -18,7 +18,31 @@ techniques:
 
 <!-- ToDo: Add translation -->
 
-# Compile NGINX with RTMP and setup Multi-Streaming
+## NGINX (Multi-) Streaming Server
+This installation Tutorial and the corresponding Scripts were initially provided within a [Gist](https://gist.github.com/noelli/489c5c0cf5a561a32f757d7513465344) and help with the installation of a custom RTMP Server using NGINX.
+
+
+We did not only want to Stream to many different Services like Youtube, Twitch and Facebook but also wanted to playback Streams locally in different Rooms with little to zero latency. Which is not possible if you use a Streaming Service in the Cloud. So we needed a Local Multi-Streaming Provider, as shown in the Diagram below.
+
+
+We managed to get there with the provided Instructions and Scripts, running on a low-cost Raspberry Pi 4, with the only Bottleneck being the Internet Connection!
+
+
+
+<img
+src="/assets/images/NGINXStreamingServer.svg"
+alt="Network Diagram of a local NGINX Streaming Server by noell.li"
+style="
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+">
+
+
+
+
+
+## Compile NGINX with RTMP and setup Multi-Streaming
 These Scripts will install NGINX with the RTMP Module in the usual directories similar to installation with apt-get.
 
 
