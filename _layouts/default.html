@@ -48,6 +48,13 @@
     .indent {
       margin-left: 10px;
     }
+
+    body:not(.loaded) .hide-for-load {
+      display: none;
+    }
+    body.loaded .hide-after-load {
+      display: none;
+    }
   </style>
 <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href='{{ "/assets/images/favicon/apple-icon-57x57.png" | prepend: site.baseurl_root }}'>
@@ -67,6 +74,12 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content='{{ "/assets/images/favicon/ms-icon-144x144.png" | prepend: site.baseurl_root }}'>
   <meta name="theme-color" content="#ffffff">
+
+<script>
+  function finishedLoading() {
+    document.body.classList.add("loaded");
+  }
+</script> 
 
   {% if site.matomo_analytics %}
   <!-- Matomo -->
@@ -95,8 +108,20 @@
   <!-- End Matomo Code -->
   {% endif %}
 </head>
-<body>
-  <header>
+<body onload="finishedLoading()">
+  <div class="preloader-wrapper big active hide-after-load">
+    <div class="spinner-layer spinner-blue">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <header class="hide-for-load">
   <!-- Navbar -->
   <div class="navbar-fixed">
     <!-- Dropdown Structure -->
@@ -108,7 +133,9 @@
     </ul>
     <nav class="green darken-3" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="/" class="brand-logo"><img class="navbar-fixed" src='{{ "/assets/images/noelli.png" | prepend: site.baseurl_root }}'></a>
+            <a id="logo-container" href="/" class="brand-logo">
+              <img class="navbar-fixed" src='{{ "/assets/images/noelli.png" | prepend: site.baseurl_root }}'>
+            </a>
             <ul class="right hide-on-med-and-down">
               {% if site.github_username%}
               <li><a class="icon-large" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i></a></li>
@@ -154,14 +181,14 @@
   </header>
   
   <!-- MAIN Content -->
-  <main>
+  <main class="hide-for-load">
     <div class="section no-pad-bot" id="index-banner">
       {{ content }}
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="page-footer green darken-3">
+  <footer class="hide-for-load page-footer green darken-3">
     <div class="container">
       <div class="row center">
         <a class="white-text btn btn-flat" href="/datenschutz">{% t global.privacy %}</a>
@@ -185,7 +212,7 @@
 
   <!-- Cookie Warning -->
   <!-- Modal Structure -->
-  <div id="cookie" class="modal bottom-sheet">
+  <div id="cookie" class="hide-for-load modal bottom-sheet">
     <div class="modal-content">
       {% tf default/cookie.md %}
     </div>

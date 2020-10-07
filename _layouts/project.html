@@ -1,17 +1,21 @@
 ---
-layout: default
+layout: legal
 ---
 
 <!-- MAIN Content -->
-<div class="container">
-    <h1>{{ page.title }}</h1>
+<div class="row">
+    <div class="col s12 m8 l9"><h1>{{ page.title }}</h1></div>
 </div>
-<div class="container">
-    <h4>Links:</h4>
-    {% for link in page.links %}
-        <a class="btn btn-floating waves-effect waves-light red" href="{{ link.url }}"><i class="fab fa-{{ link.name }}"></i></a>
-    {% endfor %}
-</div>
-<div class="container">
-    {{ content }}
+<div class="row">
+    <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+        {{ content }}
+    </div>
+    <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+        <h4>Links:</h4>
+        {% for link in page.links %}
+        <ul>
+            <li><a class="btn waves-effect waves-light red" href="{{ link.url }}"><i class="fab fa-{{ link.name }}"></i> {{ link.name }}</a></li>
+        </ul>   
+        {% endfor %}
+    </div>
 </div>
