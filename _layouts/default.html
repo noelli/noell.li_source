@@ -44,6 +44,10 @@
     .separator::after {
         margin-left: 1em;
     }
+
+    .indent {
+      margin-left: 10px;
+    }
   </style>
 <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href='{{ "/assets/images/favicon/apple-icon-57x57.png" | prepend: site.baseurl_root }}'>
@@ -95,6 +99,13 @@
   <header>
   <!-- Navbar -->
   <div class="navbar-fixed">
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      {% for project in site.projects %}
+        <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+      {% endfor %}
+
+    </ul>
     <nav class="green darken-3" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="/" class="brand-logo"><img class="navbar-fixed" src='{{ "/assets/images/noelli.png" | prepend: site.baseurl_root }}'></a>
@@ -112,6 +123,8 @@
                 {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
                 <li><a href="{{ link2 }}" >{% t global.german %}</a></li>
               {% endif %}
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">{% t global.projects %}<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
@@ -119,12 +132,24 @@
   </div>
   <ul id="nav-mobile" class="sidenav">
       <li><a class="disabled">Links:</a></li>
-    {% if site.github_username%}
-      <li><a class="icon-large" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.playsore %}
-      <li><a class="icon-large" target="_blank" href="{{ site.playstore }}"><i class="fab fa-google-play"></i></a></li>
-    {% endif %}
+      {% if site.github_username%}
+      <li class="indent"><a class="icon-large" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i> Github</a></li>
+      {% endif %}
+      {% if site.playsore %}
+      <li class="indent"><a class="icon-large" target="_blank" href="{{ site.playstore}}"><i class="fab fa-google-play"> Play Store</i></a></li>
+      {% endif %}
+      {% if site.lang == "de" %}
+        {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
+        <li class="indent"><a href="{{ link1 }}" >{% t global.english %}</a></li>
+      {% elsif site.lang == "en" %}
+        {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+        <li class="indent"><a href="{{ link2 }}" >{% t global.german %}</a></li>
+      {% endif %}
+      <hr>
+      <li><a class="disabled">{% t global.projects %}:</a></li>
+      {% for project in site.projects %}
+        <li class="indent"><a href="{{ project.url }}">{{ project.title }}</a></li>
+      {% endfor %}
   </ul>
   </header>
   

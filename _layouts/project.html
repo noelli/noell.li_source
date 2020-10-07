@@ -7,5 +7,11 @@ layout: default
     <h1>{{ page.title }}</h1>
 </div>
 <div class="container">
+    <h4>Links:</h4>
+    {% for link in page.links %}
+        <a class="btn btn-floating waves-effect waves-light red" href="{{ link.url }}"><i class="fab fa-{{ link.name }}"></i></a>
+    {% endfor %}
+</div>
+<div class="container">
     {{ content }}
 </div>
