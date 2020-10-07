@@ -13,8 +13,6 @@ links:
 techniques:
     - jekyll
     - materialize.css
-
-
 ---
 
 <!-- ToDo: Add translated description, etc. -->

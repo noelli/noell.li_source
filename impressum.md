@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: legal
 ---
 
-# Verantwortlich für diese Seite ist:
+### Verantwortlich für diese Seite ist:
 - **Tobiah Nöll**
 - 57258 Freudenberg
 - webmaster@noell.li

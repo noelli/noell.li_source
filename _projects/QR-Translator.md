@@ -17,7 +17,6 @@ techniques:
 ---
 <!-- ToDo: Add translated description, documentation, etc. -->
 
-# QR Übersetzer
 
 Diese App übersetzt QR-Codes oder Barcodes in Texte die für menschen Lesbar sind.
 

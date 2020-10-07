@@ -18,7 +18,6 @@ techniques:
 
 <!-- ToDo: Add translation -->
 
-## NGINX (Multi-) Streaming Server
 This installation Tutorial and the corresponding Scripts were initially provided within a [Gist](https://gist.github.com/noelli/489c5c0cf5a561a32f757d7513465344) and help with the installation of a custom RTMP Server using NGINX.
 
 

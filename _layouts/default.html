@@ -17,6 +17,16 @@
     <link rel="stylesheet" type="text/css" media="screen,projection" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}'/>
   </noscript>
   <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+  
+    main {
+      flex: 1 0 auto;
+    }
+
     .separator {
       display: flex;
       align-items: center;
@@ -82,6 +92,7 @@
   {% endif %}
 </head>
 <body>
+  <header>
   <!-- Navbar -->
   <div class="navbar-fixed">
     <nav class="green darken-3" role="navigation">
@@ -115,10 +126,15 @@
       <li><a class="icon-large" target="_blank" href="{{ site.playstore }}"><i class="fab fa-google-play"></i></a></li>
     {% endif %}
   </ul>
+  </header>
+  
   <!-- MAIN Content -->
-  <div class="section no-pad-bot" id="index-banner">
-    {{ content }}
-  </div>
+  <main>
+    <div class="section no-pad-bot" id="index-banner">
+      {{ content }}
+    </div>
+  </main>
+
   <!-- Footer -->
   <footer class="page-footer green darken-3">
     <div class="container">
