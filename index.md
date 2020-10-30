@@ -15,20 +15,14 @@ layout: home
         <p class="flow-text">
             {% tf home/contact.md %}
         </p>
-    </div>
-    <div class="col s12 m6">
-        <p class="flow-text">
-            {% tf home/donate.md %}
-        </p>
-    </div>
-</div>
-<div class="row center">
-    <div class="col s12 m6">
         <p class="flow-text">
             <a class="icon-large green-text" target="_blank" href="mailto:{{ site.email }}"><i class="fa fa-envelope green-text" style=""></i> {% t global.contact_me %}</a>
         </p>
     </div>
     <div class="col s12 m6">
+        <p class="flow-text">
+            {% tf home/donate.md %}
+        </p>
         <p class="flow-text">
             <form action="https://www.paypal.com/donate" method="post" target="_top">
                 <input type="hidden" name="hosted_button_id" value="96QF69TJDWTPS" />
