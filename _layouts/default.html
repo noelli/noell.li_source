@@ -9,14 +9,10 @@
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" media="all" href='{{ "assets/css/min/index.min.css" | prepend: site.baseurl_root }}' />
-<!-- 
+
   <link rel="preload" media="all" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}' as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" media="all" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}'></noscript> -->
+  <noscript><link rel="stylesheet" media="all" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}'></noscript>
 
-  <link rel="preload" media="all" href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css' as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" media="all" href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'></noscript>
-
-  
   <link rel="preload" media="all" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}' as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" media="all" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}'></noscript>
 
@@ -208,8 +204,7 @@
   <!-- Scripts -->
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   <script async src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <!-- <script async src='{{ "/assets/js/materialize.js" | prepend: site.baseurl_root }}'></script> -->
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script async src='{{ "/assets/js/materialize.js" | prepend: site.baseurl_root }}'></script>
   <script async src='{{ "/assets/js/init.js" | prepend: site.baseurl_root }}'></script>
 </body>
 </html>

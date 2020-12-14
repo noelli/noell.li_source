@@ -6,3 +6,5 @@
       widths: [30]
     head:
       widths: [64]
+    proj:
+      widths: [100,360]
