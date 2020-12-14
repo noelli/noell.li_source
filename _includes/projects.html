@@ -19,7 +19,7 @@
             </div>
             <div class="card-action">
             {% for link in project.links %}
-                <a class="btn btn-floating waves-effect waves-light red" href="{{ link.url }}"><i class="fab fa-{{ link.name }}"></i></a>
+                <a class="btn btn-floating waves-effect waves-light red" href="{{ link.url }}">{{ link.icon }}</a>
             {% endfor %}
             <a class="btn btn-flat waves-effect waves-light" href="{{ project.url }}">mehr</a>
             </div>

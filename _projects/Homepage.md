@@ -6,9 +6,10 @@ description: >-
     Allerdings ist Sie auch noch in Arbeit, bitte entschuldigt daher eventuelle Fehler.
 client: Uni Siegen
 thumbnail:
-    url: assets/images/noelli.png
+    url: assets/images/thumbs/noelli.png
 links:
-    - name: github
+    - name: Github
+      icon: <i class="fab fa-github"></i>
       url: https://github.com/noelli/noell.li_source
 techniques:
     - jekyll

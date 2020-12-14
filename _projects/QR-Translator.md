@@ -4,11 +4,13 @@ title: QR-Translator
 description: Dies ist ein Übersetzer für QR-Codes
 client: Uni Siegen
 thumbnail:
-    url: assets/images/QR-Translator.png
+    url: assets/images/thumbs/QR-Translator.png
 links:
-    - name: github
+    - name: Github
+      icon: <i class="fab fa-github"></i>
       url: https://github.com/noelli/qr_translator
-    - name: google-play
+    - name: Google Play
+      icon: <i class="fab fa-google-play"></i>
       url: https://play.google.com/store/apps/details?id=li.noell.qr_translator
 techniques:
     - Flutter
