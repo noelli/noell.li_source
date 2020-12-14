@@ -6,7 +6,7 @@ description: >-
     Allerdings ist Sie auch noch in Arbeit, bitte entschuldigt daher eventuelle Fehler.
 client: Uni Siegen
 thumbnail:
-    url: assets/images/thumbs/noelli.png
+    url: noelli.png
 links:
     - name: Github
       icon: <i class="fab fa-github"></i>

@@ -1,0 +1,8 @@
+presets:
+  default:
+    formats: [webp, original]
+    widths: [100, 400, 800, 1000]
+  mini:
+    widths: [30]
+
+

@@ -45,6 +45,10 @@ keep_files: ['CNAME', '.git', '.gitignore']
 
 languages: ["de", "en"]
 
+picture:
+  source: "assets/images"
+  output: "assets/generated"
+
 # exclude_from_localizations: ["assets", "404.html"]
 # If you wish to avoid having the default_lang built into the root of your website, use:
 # default_locale_in_subfolder: true
@@ -67,7 +71,7 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - node_modules/
+  - node_modules
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/

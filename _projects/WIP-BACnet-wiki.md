@@ -4,7 +4,7 @@ title: BACnet Wiki -WIP-
 description: Ein Wiki für kleinigkeiten im BACnet Protokoll. Copyright des Vorschaubildes liegt nicht bei mir! 
 client: noell.li
 thumbnail:
-    url: assets/images/thumbs/bacnet.png
+    url: bacnet.jpg
 links:
     - name: Github
       icon: <i class="fab fa-github"></i>

@@ -48,19 +48,21 @@ layout: home
                 data-position="top" 
                 data-tooltip="flask.palletsprojects.com" 
                 href="https://flask.palletsprojects.com/">
-                <img height="30px" width="30px" src='{{ "/assets/images/thumbs/flask.png" | prepend: site.baseurl_root }}'>
+                {% picture "flask.png" --img height="30px" width="30px" %}
+                
             </a>
             <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" 
                 data-position="top"
                 data-tooltip="dart.dev" 
                 href="https://dart.dev/">
-                <img height="30px" width="30px" src='{{ "/assets/images/thumbs/logo_dart.png" | prepend: site.baseurl_root }}'>
+                {% picture "logo_dart.png" --img height="30px" width="30px" %}
             </a>
             <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" 
                 data-position="top" 
                 data-tooltip="flutter.dev" 
                 href="https://flutter.dev">
-                <img height="30px" width="30px" src='{{ "/assets/images/thumbs/logo_flutter.png" | prepend: site.baseurl_root }}'>
+                {% picture "logo_flutter.png" --img height="30px" width="30px" %}
+                
             </a>
         </div>
     </div>

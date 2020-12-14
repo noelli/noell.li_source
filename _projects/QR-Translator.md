@@ -4,7 +4,7 @@ title: QR-Translator
 description: Dies ist ein Übersetzer für QR-Codes
 client: Uni Siegen
 thumbnail:
-    url: assets/images/thumbs/QR-Translator.png
+    url: QR-Translator.png
 links:
     - name: Github
       icon: <i class="fab fa-github"></i>

@@ -4,7 +4,7 @@ title: NGINX (Multi-) Streaming Server
 description: Instrucions and Scripts to Setup your own (Multi-) Streaming Server, either Locally or on a VPS.
 client: Ev. Gemeinschaft Büschergrund
 thumbnail:
-    url: assets/images/thumbs/NGINXStreamingServer.png
+    url: NGINXStreamingServer.png
 links:
     - name: Github
       icon: <i class="fab fa-github"></i>
