@@ -1,5 +1,8 @@
   presets:
     default:
       formats: [webp, original]
-      widths: [30, 64, 100, 400, 800, 1000]
-      
+      widths: [100, 400, 800, 1000]
+    mini:
+      widths: [30]
+    head:
+      widths: [64]

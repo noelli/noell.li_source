@@ -48,20 +48,20 @@ layout: home
                 data-position="top" 
                 data-tooltip="flask.palletsprojects.com" 
                 href="https://flask.palletsprojects.com/">
-                {% picture "flask.png" --img height="30px" width="30px" %}
+                {% picture mini "flask.png" --img height="30px" width="30px" %}
                 
             </a>
             <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" 
                 data-position="top"
                 data-tooltip="dart.dev" 
                 href="https://dart.dev/">
-                {% picture "logo_dart.png" --img height="30px" width="30px" %}
+                {% picture mini "logo_dart.png" --img height="30px" width="30px" %}
             </a>
             <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" 
                 data-position="top" 
                 data-tooltip="flutter.dev" 
                 href="https://flutter.dev">
-                {% picture "logo_flutter.png" --img height="30px" width="30px" %}
+                {% picture mini "logo_flutter.png" --img height="30px" width="30px" %}
                 
             </a>
         </div>
