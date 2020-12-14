@@ -32,25 +32,63 @@ layout: home
         </p>
     </div>
 </div>
-<div class="separator">
-    <h5>{% t global.languages %} & {% t global.frameworks %}:</h5>
-</div>
 <div class="row center">
-    <a class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" data-position="top" data-tooltip="python.org" href="https://python.org">
-        <i class="fab fa-python"></i>
-    </a>
-    <a class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" data-position="top" data-tooltip="flask.palletsprojects.com" href="https://flask.palletsprojects.com/">
-        <img height="30px" width="30px" src='{{ "/assets/images/flask.png" | prepend: site.baseurl_root }}'>
-    </a>
-    <a class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" data-position="top" data-tooltip="dart.dev" href="https://dart.dev/">
-        <img height="30px" width="30px" src='{{ "/assets/images/logo_dart.png" | prepend: site.baseurl_root }}'>
-    </a>
-    <a class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" data-position="top" data-tooltip="flutter.dev" href="https://flutter.dev">
-        <img height="30px" width="30px" src='{{ "/assets/images/logo_flutter.png" | prepend: site.baseurl_root }}'>
-    </a>
-    <a class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" data-position="top" data-tooltip="nginx.org" href="https://nginx.org">
-        NGINX
-    </a>
+    <div class="col s12 m6">
+        <div class="separator">
+            <h5>{% t global.languages %} & {% t global.frameworks %}:</h5>
+        </div>
+        <div class="row center">
+            <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped"
+                data-position="top"
+                data-tooltip="python.org"
+                href="https://python.org">
+                <i class="fab fa-python"></i>
+            </a>
+            <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" 
+                data-position="top" 
+                data-tooltip="flask.palletsprojects.com" 
+                href="https://flask.palletsprojects.com/">
+                <img height="30px" width="30px" src='{{ "/assets/images/flask.png" | prepend: site.baseurl_root }}'>
+            </a>
+            <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" 
+                data-position="top"
+                data-tooltip="dart.dev" 
+                href="https://dart.dev/">
+                <img height="30px" width="30px" src='{{ "/assets/images/logo_dart.png" | prepend: site.baseurl_root }}'>
+            </a>
+            <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" 
+                data-position="top" 
+                data-tooltip="flutter.dev" 
+                href="https://flutter.dev">
+                <img height="30px" width="30px" src='{{ "/assets/images/logo_flutter.png" | prepend: site.baseurl_root }}'>
+            </a>
+        </div>
+    </div>
+    <div class="col s12 m6">
+        <div class="separator">
+            <h5>{% t global.technologies %}:</h5>
+        </div>
+        <div class="row center">
+            <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped"
+                data-position="top"
+                data-tooltip="nginx.org"
+                href="https://nginx.org">
+                NGINX
+            </a>
+            <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped"
+                data-position="top"
+                data-tooltip="inga-hameln.de"
+                href="http://www.inga-hameln.de/ibms">
+                iBMS
+            </a>
+            <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped"
+                data-position="top"
+                data-tooltip="bacnet.org"
+                href="http://www.bacnet.org/">
+                BACnet
+            </a>
+        </div>
+    </div>
 </div>
 <div class="separator">
     <h5>{% t global.last_projects %}</h5>

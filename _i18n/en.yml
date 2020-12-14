@@ -4,6 +4,7 @@ global:
   last_projects: "Last Projects:"
   languages: Languages
   frameworks: Frameworks
+  technologies: Technologies
   privacy: Privacy
   imprint: Imprint
   ja: "Yes"
