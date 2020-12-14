@@ -9,8 +9,9 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" type="text/css" media="screen,projection" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}'/>
-  <link rel="stylesheet" type="text/css" media="screen,projection" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}'/>
+  <link rel="stylesheet" href='{{ "assets/css/min/index.min.css" | prepend: site.baseurl_root }}' />
+  <link rel="stylesheet" type="text/css" media="screen,projection" rel="preload" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}'/>
+  <link rel="stylesheet" type="text/css" media="screen,projection" rel="preload" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}'/>
   <style>
     body {
       display: flex;
@@ -43,13 +44,14 @@
     .indent {
       margin-left: 10px;
     }
-
+/*
     body:not(.loaded) .hide-for-load {
       display: none;
     }
     body.loaded .hide-after-load {
       display: none;
     }
+  */
     .loader {
       margin: 100px auto;
       font-size: 25px;
@@ -173,9 +175,9 @@
   {% endif %}
 </head>
 <body onload="finishedLoading()">
-  <div class="hide-after-load">
+  <!-- <div class="hide-after-load">
     <div class="loader">Loading...</div>
-  </div>
+  </div> -->
 
   <header class="hide-for-load">
   <!-- Navbar -->
@@ -278,10 +280,10 @@
     </div>
   </div>
   <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src='{{ "/assets/js/materialize.js" | prepend: site.baseurl_root }}'></script>
-  <script src='{{ "/assets/js/init.js" | prepend: site.baseurl_root }}'></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <script async src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script async src='{{ "/assets/js/materialize.js" | prepend: site.baseurl_root }}'></script>
+  <script async src='{{ "/assets/js/init.js" | prepend: site.baseurl_root }}'></script>
 </body>
 </html>
 
