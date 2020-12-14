@@ -48,6 +48,12 @@ languages: ["de", "en"]
 picture:
   source: "assets/images"
   output: "assets/generated"
+  presets:
+    default:
+      formats: [webp, original]
+      widths: [64, 100, 400, 800, 1000]
+    mini:
+      widths: [30]
 
 # exclude_from_localizations: ["assets", "404.html"]
 # If you wish to avoid having the default_lang built into the root of your website, use:

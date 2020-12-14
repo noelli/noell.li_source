@@ -2,7 +2,7 @@
 layout: home
 ---
 
-<h1 class="header center"><img style="height: 200px; width: 200px;" src="assets/images/noelli.png" alt=""></h1>
+<h1 class="header center">{% picture noelli.png --img style="height: 200px; width: 200px;"%}</h1>
 <h3 class="no-top-margin header center">{% t global.title %}</h3>
 <br>
 <div class="row center">
