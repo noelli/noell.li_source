@@ -8,10 +8,16 @@
   <title>{{ project.title | default: site.title | default: site.github.repository_name }}</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href='{{ "assets/css/min/index.min.css" | prepend: site.baseurl_root }}' />
-  <link rel="stylesheet" type="text/css" media="screen,projection" rel="preload" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}'/>
-  <link rel="stylesheet" type="text/css" media="screen,projection" rel="preload" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}'/>
+  <link rel="stylesheet" type="text/css" media="all" href='{{ "assets/css/min/index.min.css" | prepend: site.baseurl_root }}' />
+
+  <link rel="preload" media="all" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}' as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" media="all" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}'></noscript>
+
+  <link rel="preload" media="all" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}' as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" media="all" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}'></noscript>
+
+  <link rel="preload" media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
   <style>
     body {
       display: flex;
