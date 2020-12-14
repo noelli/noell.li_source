@@ -48,19 +48,19 @@ layout: home
                 data-position="top" 
                 data-tooltip="flask.palletsprojects.com" 
                 href="https://flask.palletsprojects.com/">
-                <img height="30px" width="30px" src='{{ "/assets/images/flask.png" | prepend: site.baseurl_root }}'>
+                <img height="30px" width="30px" src='{{ "/assets/images/thumbs/flask.png" | prepend: site.baseurl_root }}'>
             </a>
             <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" 
                 data-position="top"
                 data-tooltip="dart.dev" 
                 href="https://dart.dev/">
-                <img height="30px" width="30px" src='{{ "/assets/images/logo_dart.png" | prepend: site.baseurl_root }}'>
+                <img height="30px" width="30px" src='{{ "/assets/images/thumbs/logo_dart.png" | prepend: site.baseurl_root }}'>
             </a>
             <a  class="btn btn-flat waves-effect waves-light waves-green icon-large tooltipped" 
                 data-position="top" 
                 data-tooltip="flutter.dev" 
                 href="https://flutter.dev">
-                <img height="30px" width="30px" src='{{ "/assets/images/logo_flutter.png" | prepend: site.baseurl_root }}'>
+                <img height="30px" width="30px" src='{{ "/assets/images/thumbs/logo_flutter.png" | prepend: site.baseurl_root }}'>
             </a>
         </div>
     </div>
