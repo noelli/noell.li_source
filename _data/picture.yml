@@ -1,10 +1,12 @@
   presets:
     default:
       formats: [webp, original]
-      widths: [100, 400, 800, 1000]
     mini:
       widths: [30]
+      fallback: 30
     head:
       widths: [64]
+      fallback: 64
     proj:
       widths: [100,360]
+      fallback: 360

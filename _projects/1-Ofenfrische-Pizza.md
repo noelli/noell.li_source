@@ -19,7 +19,7 @@ techniques:
 
 <!-- ToDo: Add translated description, etc. -->
 
-Die Homepage von Ofenfrische Pizza Rossbach haben wir, in Zusammenarbeit mit den Betreibern dieses Hervorragenden Pizzaservice, neu gestaltet und auf moderne Technologien umgerüstet.
+Die Homepage von Ofenfrische Pizza Rossbach haben wir, in Zusammenarbeit mit den Betreibern dieses hervorragenden Pizzaservice, neu gestaltet und auf moderne Technologien umgerüstet.
 
 Dabei wurde darauf geachtet, dass die Betreiber selbst in der Lage sind in der Zukunft Änderungen an der Homepage durchzuführen und das auch in einer intuitiven Webfront.
 

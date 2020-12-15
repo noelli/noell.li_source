@@ -10,14 +10,14 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" media="all" href='{{ "assets/css/min/index.min.css" | prepend: site.baseurl_root }}' />
 
-  <link rel="preload" media="all" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}' as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" media="all" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}'></noscript>
+  <link rel="preload" media="all" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}' as="style" crossorigin="anonymous">
+  <link rel="stylesheet" media="all" href='{{ "/assets/css/materialize.css" | prepend: site.baseurl_root }}'>
 
-  <link rel="preload" media="all" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}' as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" media="all" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}'></noscript>
+  <link rel="preload" media="all" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}' as="style" >
+  <link rel="stylesheet" media="all" href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}'>
 
-  <link rel="preload" media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
+  <link rel="preload" media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style">
+  <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <style>
     body {
       display: flex;
@@ -131,7 +131,7 @@
                 <li><a href="{{ link2 }}" >{% t global.german %}</a></li>
               {% endif %}
               <!-- Dropdown Trigger -->
-              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">{% t global.projects %}<i class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a class="dropdown-trigger" href="#" data-target="dropdown1">{% t global.projects %}<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
@@ -197,15 +197,15 @@
       {% tf default/cookie.md %}
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="_paq.push(['rememberConsentGiven']); setCookie('firsttime', true);">{% t global.ja %}</a>
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">{% t global.nein %}</a>
+      <a href="#" class="modal-close waves-effect waves-green btn-flat" onclick="_paq.push(['rememberConsentGiven']); setCookie('firsttime', true);">{% t global.ja %}</a>
+      <a href="#" class="modal-close waves-effect waves-green btn-flat">{% t global.nein %}</a>
     </div>
   </div>
   <!-- Scripts -->
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-  <script async src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script async src='{{ "/assets/js/materialize.js" | prepend: site.baseurl_root }}'></script>
-  <script async src='{{ "/assets/js/init.js" | prepend: site.baseurl_root }}'></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script defer src='{{ "/assets/js/materialize.js" | prepend: site.baseurl_root }}'></script>
+  <script defer src='{{ "/assets/js/init.js" | prepend: site.baseurl_root }}'></script>
 </body>
 </html>
 
